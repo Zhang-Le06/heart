@@ -3,14 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh"
-          content="0; url=heart_source_exact_h264.mp4">
+          content="width=device-width, initial-scale=1.0,
+                   maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000000">
     <title>欣</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+
+        video {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            width: 100dvw;
+            height: 100dvh;
+            object-fit: contain;
+            background: #000;
+        }
+    </style>
 </head>
 <body>
-<script>
-    location.replace("heart_source_exact_h264.mp4");
-</script>
+    <video
+        src="heart_source_exact_h264.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+        webkit-playsinline
+        preload="auto">
+    </video>
 </body>
 </html>
